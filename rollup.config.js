@@ -23,6 +23,7 @@ const inputFiles = [
   { name: 'camel-to-dash', ext: 'ts', id: 'camelToDash' },
   { name: 'css-obj-to-vars', ext: 'ts', id: 'cssObjToVars' },
   { name: 'style-element', ext: 'tsx', id: 'styleElement' },
+  { name: 'set-css-vars', ext: 'ts', id: 'setCssVars' },
 ]
 
 export default inputFiles.map((file) => {
