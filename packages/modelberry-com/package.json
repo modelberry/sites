@@ -4,22 +4,22 @@
   "private": true,
   "description": "https://www.modelberry.com",
   "keywords": [
-    "any",
-    "cli",
     "component",
     "contentful",
     "gatsbyjs",
+    "modelberry",
     "netlify",
+    "nextjs",
     "react",
     "typescript"
   ],
-  "homepage": "https://github.com/jaccomeijer/modelberry#readme",
+  "homepage": "https://github.com/modelberry/sites#readme",
   "bugs": {
-    "url": "https://github.com/jaccomeijer/modelberry/issues"
+    "url": "https://github.com/modelberry/sites/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaccomeijer/modelberry.git"
+    "url": "git+https://github.com/modelberry/sites.git"
   },
   "license": "MIT",
   "author": "Jacco Meijer (https://www.jaccomeijer.nl)",

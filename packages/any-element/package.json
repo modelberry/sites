@@ -1,13 +1,12 @@
 {
-  "name": "@modelberry/css-theme",
-  "version": "6.25.3",
-  "description": "Library for working with css theme variables",
+  "name": "@modelberry/any-element",
+  "version": "6.25.4",
+  "description": "Any element with CSS reset and CSS Emotion props",
   "keywords": [
+    "any",
     "component",
-    "contentful",
     "gatsbyjs",
     "modelberry",
-    "netlify",
     "nextjs",
     "react",
     "typescript"
@@ -31,12 +30,8 @@
   ],
   "exports": {
     "./react": {
-      "require": "./build/react.cjs",
-      "import": "./build/react.mjs"
-    },
-    "./plain": {
-      "require": "./build/plain.cjs",
-      "import": "./build/plain.mjs"
+      "import": "./build/react.mjs",
+      "require": "./build/react.cjs"
     }
   },
   "typesVersions": {
@@ -60,10 +55,14 @@
     "build:test": "jest --silent --passWithNoTests",
     "build:types": "tsc -p tsconfig.json --declaration --emitDeclarationOnly --declarationDir build",
     "clean": "rimraf build/*",
-    "clean-npm": "find . -name node_modules | xargs rm -rf && find . -name package-lock.json | xargs rm -rf",
-    "dev": "rollup --config --watch"
+    "dev": "rollup --config --watch",
+    "generate": "npm-run-all generate:*",
+    "generate:compile": "tsc -p tsconfig.generate.json",
+    "generate:update": "node build/generate-elements/generate-elements.js",
+    "generate:update-lint-fix": "eslint 'src/elements.tsx' --fix"
   },
   "peerDependencies": {
+    "@emotion/react": "11.x",
     "react": "17.x",
     "react-dom": "17.x"
   },
