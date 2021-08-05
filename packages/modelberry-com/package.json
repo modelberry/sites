@@ -34,7 +34,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm-run-all clean build:* copy-static-public",
+    "build": "echo Nothing to do for now",
+    "build-restore-me": "npm-run-all clean build:* copy-static-public",
     "build:compile": "NODE_ENV=production gatsby build",
     "build:lint": "eslint 'src/**/*.{ts,tsx}'",
     "build:test": "jest --silent --passWithNoTests",
@@ -58,8 +59,5 @@
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=7.11.1"
-  },
-  "mobelberry": {
-    "version": "7.0.0"
   }
 }
