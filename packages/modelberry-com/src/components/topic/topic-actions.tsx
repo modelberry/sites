@@ -1,4 +1,4 @@
-import { Div } from '@modelberry/any/react'
+import { Div } from '@modelberry/any-element/react'
 import { mediaQuery } from '../../lib/media-query'
 import {
   ComponentProps,

@@ -17,7 +17,7 @@ module.exports = {
     siteVersion: packageJson.version,
     siteUrl: 'https://www.modelberry.com',
     legal: {
-      version: packageJson.modelberry.version,
+      version: '6.28.3',
       description: 'Made with Modelberry',
       url: 'https://www.modelberry.com',
     },

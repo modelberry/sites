@@ -1,4 +1,4 @@
-import { Div, H1 } from '@modelberry/any/react'
+import { Div, H1 } from '@modelberry/any-element/react'
 
 const ErrorPage = () => {
   return (

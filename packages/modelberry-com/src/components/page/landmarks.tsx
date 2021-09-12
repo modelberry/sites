@@ -1,4 +1,4 @@
-import { Footer, Main } from '@modelberry/any/react'
+import { Footer, Main } from '@modelberry/any-element/react'
 import React, { Fragment } from 'react'
 import { GridTemplate } from '../layout/grid-template'
 import { ContentfulTextSection } from '../models/contentful-text-section'

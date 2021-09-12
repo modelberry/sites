@@ -1,4 +1,4 @@
-import { Div, Li, Ul } from '@modelberry/any/react'
+import { Div, Li, Ul } from '@modelberry/any-element/react'
 import {
   ComponentOptions,
   ComponentProps,

@@ -1,4 +1,4 @@
-import { Div, Section } from '@modelberry/any/react'
+import { Div, Section } from '@modelberry/any-element/react'
 import { ComponentProps, StyleFactory } from '../../lib/component-styles'
 import { mediaQuery } from '../../lib/media-query'
 import { NavigationSegment } from './navigation-segment'

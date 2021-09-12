@@ -1,4 +1,4 @@
-import { Div, Nav } from '@modelberry/any/react'
+import { Div, Nav } from '@modelberry/any-element/react'
 import { ComponentProps, StyleFactory } from '../../lib/component-styles'
 import { mediaQuery } from '../../lib/media-query'
 import { ContentfulNavigationSection } from './contentful-navigation-section'

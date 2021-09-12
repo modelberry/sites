@@ -1,4 +1,4 @@
-import { AnyProps, Figcaption, Img, Picture } from '@modelberry/any/react'
+import { AnyProps, Figcaption, Img, Picture } from '@modelberry/any-element/react'
 import { mediaQuery } from '../../lib/media-query'
 import {
   ComponentOptions,

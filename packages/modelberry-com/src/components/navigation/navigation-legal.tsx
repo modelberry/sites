@@ -1,4 +1,4 @@
-import { A, Div, Section, Span, Sup } from '@modelberry/any/react'
+import { A, Div, Section, Span, Sup } from '@modelberry/any-element/react'
 import { ComponentProps, StyleFactory } from '../../lib/component-styles'
 import { mediaQuery } from '../../lib/media-query'
 import { ContentfulNavigationSection } from './contentful-navigation-section'

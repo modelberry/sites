@@ -1,4 +1,4 @@
-import { Div, Header, Nav } from '@modelberry/any/react'
+import { Div, Header, Nav } from '@modelberry/any-element/react'
 import { useState } from 'react'
 import {
   ComponentProps,

@@ -1,4 +1,4 @@
-import { Div, Section } from '@modelberry/any/react'
+import { Div, Section } from '@modelberry/any-element/react'
 import {
   ComponentProps,
   StyleFactory,

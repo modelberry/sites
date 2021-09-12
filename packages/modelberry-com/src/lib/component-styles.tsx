@@ -1,5 +1,5 @@
 import { CSSObject } from '@emotion/react'
-import { AnyProps } from '@modelberry/any/react'
+import { AnyProps } from '@modelberry/any-element/react'
 
 export type ComponentProps<
   Model = undefined,

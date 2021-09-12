@@ -1,4 +1,4 @@
-import { AnyProps, Video as AnyVideo, Source, P, B } from '@modelberry/any/react'
+import { AnyProps, Video as AnyVideo, Source, P, B } from '@modelberry/any-element/react'
 import {
   ComponentOptions,
   ComponentProps,

@@ -15,7 +15,7 @@ import {
   Tr,
   U,
   Ul,
-} from '@modelberry/any/react'
+} from '@modelberry/any-element/react'
 import {
   documentToReactComponents,
   Options,

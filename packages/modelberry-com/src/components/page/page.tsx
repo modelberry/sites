@@ -1,5 +1,5 @@
 import { Global } from '@emotion/react'
-import { globalReset } from '@modelberry/any/react'
+import { globalReset } from '@modelberry/any-element/react'
 import { graphql, PageProps } from 'gatsby'
 import { GlobalsProvider } from '../../lib/globals-provider'
 import { ContentfulGlobals } from './contentful-globals'

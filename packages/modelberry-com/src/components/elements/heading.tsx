@@ -1,4 +1,4 @@
-import { Any } from '@modelberry/any/react'
+import { Any } from '@modelberry/any-element/react'
 import {
   ComponentOptions,
   ComponentProps,

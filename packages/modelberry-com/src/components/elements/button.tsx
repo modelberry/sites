@@ -1,4 +1,4 @@
-import { Button as AnyButton } from '@modelberry/any/react'
+import { Button as AnyButton } from '@modelberry/any-element/react'
 import {
   ComponentOptions,
   ComponentProps,

@@ -1,4 +1,4 @@
-import { A as AnyA } from '@modelberry/any/react'
+import { A as AnyA } from '@modelberry/any-element/react'
 import {
   ComponentProps,
   StyleFactory,
