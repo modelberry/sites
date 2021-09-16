@@ -3,7 +3,7 @@
  * @see https://css-tricks.com/box-sizing/
  */
 
-import { CSSObject } from '@emotion/react'
+import type { CSSObject } from '@emotion/react'
 
 export const anyReset: CSSObject = {
   boxSizing: 'border-box',
