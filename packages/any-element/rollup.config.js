@@ -13,10 +13,11 @@ import rootPkg from '../../package.json'
 const moduleName = pkg.name.replace(/^@.*\//, '')
 const author = rootPkg.author
 const globals = {
-  react: 'React',
-  'react-dom': 'ReactDOM',
-  '@emotion/react': 'CSSObject, jsx',
-  'react/jsx-runtime': 'jsx',
+  react: '*',
+  'react-dom': '*',
+  '@emotion/css': '*',
+  '@emotion/react': '*',
+  'react/jsx-runtime': '*',
 }
 const external = Object.keys(globals)
 
