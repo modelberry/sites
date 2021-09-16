@@ -1,4 +1,5 @@
-import { CSSObject, jsx } from '@emotion/react'
+import { jsx } from '@emotion/react'
+import type { CSSObject } from '@emotion/react'
 import { anyReset } from './resets/any-reset'
 import { elementResetMap, ElementResetName } from './resets/element-reset-map'
 
@@ -30,5 +31,5 @@ export const AnyComponent: React.FC<any> = (props) => {
 export const Any: React.FC<any> = (props: any) => {
   const elementName: ElementResetName = props.is || 'div'
   const elementReset: CSSObject = elementResetMap[elementName]
-  return <AnyComponent {...props} css={[anyReset, elementReset, props.css]} />
+  return <AnyComponent {...props} css={[anyReset, elementReset]} />
 }
