@@ -37,7 +37,7 @@
   "typesVersions": {
     "*": {
       "*": [
-        "build/react*"
+        "build/*"
       ]
     }
   },
