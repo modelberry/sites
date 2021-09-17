@@ -35,6 +35,9 @@
   "workspaces": [
     "./packages/*"
   ],
+  "scripts": {
+    "reset": "find . -name node_modules | xargs rm -rf && find . -name package-lock.json | xargs rm -rf && npm install --legacy-peer-deps"
+  },
   "devDependencies": {
     "@babel/core": "7.15.5",
     "@babel/plugin-transform-modules-commonjs": "7.15.4",
