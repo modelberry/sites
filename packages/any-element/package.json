@@ -1,6 +1,6 @@
 {
   "name": "@modelberry/any-element",
-  "version": "6.28.7",
+  "version": "6.28.8",
   "description": "Any element with CSS reset and CSS Emotion props",
   "keywords": [
     "any",

@@ -1,5 +1,7 @@
 # Changelog
 
+### [6.28.8](https://github.com/modelberry/sites/compare/6.28.7...6.28.8) (2021-09-18)
+
 ### [6.28.7](https://github.com/modelberry/sites/compare/6.28.6...6.28.7) (2021-09-17)
 
 
