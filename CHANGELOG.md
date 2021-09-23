@@ -1,5 +1,12 @@
 # Changelog
 
+# Release 6.28.12
+
+## @modelberry/parse-markdown-links 6.28.12
+
+### [6.28.12](https://github.com/modelberry/sites/compare/6.28.11...6.28.12) (2021-09-23)
+
+
 # Release 6.28.11
 
 ## @modelberry/any-element 6.28.11

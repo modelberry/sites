@@ -1,0 +1,73 @@
+{
+  "name": "@modelberry/parse-markdown-links",
+  "version": "6.28.12",
+  "description": "Library for parsing markdown links",
+  "keywords": [
+    "component",
+    "contentful",
+    "gatsbyjs",
+    "modelberry",
+    "netlify",
+    "nextjs",
+    "react",
+    "typescript"
+  ],
+  "homepage": "https://github.com/modelberry/sites#readme",
+  "bugs": {
+    "url": "https://github.com/modelberry/sites/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modelberry/sites.git"
+  },
+  "license": "MIT",
+  "author": "Jacco Meijer (https://www.jaccomeijer.nl)",
+  "contributors": [
+    {
+      "name": "Jacco Meijer",
+      "email": "jacco@jaccomeijer.nl",
+      "url": "https://www.jaccomeijer.nl"
+    }
+  ],
+  "exports": {
+    "./react": {
+      "require": "./build/react.cjs",
+      "import": "./build/react.mjs"
+    },
+    "./plain": {
+      "require": "./build/plain.cjs",
+      "import": "./build/plain.mjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "build/*"
+      ]
+    }
+  },
+  "files": [
+    "CHANGELOG.md",
+    "build"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm-run-all clean build:*",
+    "build:compile": "rollup --config",
+    "build:lint": "eslint 'src/**/*.{js,ts,tsx}'",
+    "build:test": "jest --silent --passWithNoTests",
+    "build:types": "tsc -p tsconfig.json --declaration --emitDeclarationOnly --declarationDir build",
+    "clean": "rimraf build/*",
+    "dev": "rollup --config --watch"
+  },
+  "peerDependencies": {
+    "react": "17.x",
+    "react-dom": "17.x"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.11.1"
+  }
+}
