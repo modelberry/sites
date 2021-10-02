@@ -36,3 +36,5 @@ atlassian-ide-plugin.xml
 *.jwk
 *.pem
 *.map
+
+test/

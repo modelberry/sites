@@ -44,7 +44,9 @@
     "dev": "NODE_ENV=development gatsby develop",
     "dev-ssl": "NODE_ENV=development gatsby develop --https",
     "serve": "gatsby serve",
-    "static-css-vars": "rollup --config rollup.static.config.js"
+    "static-css-vars": "rollup --config rollup.static.config.js",
+    "pull-content": "mbfactory pull content @modelberry/plugin-contentful/plain test",
+    "pull-models": "mbfactory pull models @modelberry/plugin-contentful/plain test"
   },
   "dependencies": {
     "@apollo/client": "3.3.21",
@@ -61,5 +63,9 @@
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=7.11.1"
+  },
+  "devDependencies": {
+    "@modelberry/mbfactory": "6.30.1",
+    "@modelberry/plugin-contentful": "6.30.1"
   }
 }
