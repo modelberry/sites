@@ -47,8 +47,8 @@
     "static-css-vars": "rollup --config rollup.static.config.js",
     "pull-content": "mbfactory pull content @modelberry/plugin-contentful/plain test",
     "pull-models": "mbfactory pull models @modelberry/plugin-contentful/plain test",
-    "push-content": "mbfactory push models ./test/main-content.ts",
-    "push-models": "mbfactory push models ./test/main.ts"
+    "push-content": "mbfactory push content ./starter/main-content.ts",
+    "push-models": "mbfactory push models ./starter/main.ts"
   },
   "dependencies": {
     "@apollo/client": "3.3.21",
