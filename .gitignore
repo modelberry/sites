@@ -3,6 +3,7 @@
 .eslintcache
 .next
 build/
+compiled-config
 dist/
 public/
 reduxcache*
