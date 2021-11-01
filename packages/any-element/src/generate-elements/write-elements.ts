@@ -13,7 +13,7 @@ export const writeElements = (elements: string[]) => {
 `
   elements.forEach((element) => {
     const jsxComponentName = element[0].toUpperCase() + element.slice(1)
-    data += `export const ${jsxComponentName}: React.FC<AnyProps['${element}']> = (props) => <Any is="${element}" css={{ label: '${element}' }} {...props} />
+    data += `export const ${jsxComponentName}: React.FC<AnyProps['${element}']> = (props) => <Any is="${element}" {...props} />
 `
   })
   const file = path.join(FOLDER, FILE)

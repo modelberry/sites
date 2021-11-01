@@ -4,9 +4,10 @@ import { anyReset } from './resets/any-reset'
 import { elementResetMap, ElementResetName } from './resets/element-reset-map'
 
 type JSXIntrElName = keyof jsx.JSX.IntrinsicElements
+export type StyleObject = CSSObject | CSSObject[]
 
 /**
- * Extend JSX.IntrinsicElements with AnyProps: `is` and `css`
+ * Extend JSX.IntrinsicElements with AnyProps: `is` and `customCss`
  */
 export type AnyProps = {
   [K in JSXIntrElName]: jsx.JSX.IntrinsicElements[K] & {
@@ -15,14 +16,19 @@ export type AnyProps = {
      * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
      */
     is?: JSXIntrElName
+    customCss?: StyleObject
   }
 }
 
-export const Any: React.FC<any> = (props: any) => {
-  const elementName: ElementResetName = props.is || 'div'
+export const Any: React.FC<any> = ({ customCss, is, ...props }: any) => {
+  const elementName: ElementResetName = is || 'div'
   const elementReset: CSSObject = elementResetMap[elementName]
-  const attr = Object.assign({}, props)
-  attr.css = [anyReset, elementReset, props.css]
-  delete attr.is
-  return jsx(elementName, attr, props.children)
+  return jsx(
+    elementName,
+    {
+      css: [anyReset, elementReset, customCss],
+      ...props,
+    },
+    props.children
+  )
 }
