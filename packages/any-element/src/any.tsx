@@ -7,7 +7,7 @@ type JSXIntrElName = keyof jsx.JSX.IntrinsicElements
 export type StyleObject = CSSObject | CSSObject[]
 
 /**
- * Extend JSX.IntrinsicElements with AnyProps: `is` and `customCss`
+ * Extend JSX.IntrinsicElements with AnyProps: `is` and `anyCss`
  */
 export type AnyProps = {
   [K in JSXIntrElName]: jsx.JSX.IntrinsicElements[K] & {
@@ -16,19 +16,16 @@ export type AnyProps = {
      * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
      */
     is?: JSXIntrElName
-    customCss?: StyleObject
+    anyCss?: StyleObject
   }
 }
 
-export const Any: React.FC<any> = ({ customCss, is, ...props }: any) => {
+export const Any: React.FC<any> = ({ anyCss, is, ...props }: any) => {
   const elementName: ElementResetName = is || 'div'
   const elementReset: CSSObject = elementResetMap[elementName]
   return jsx(
     elementName,
-    {
-      css: [anyReset, elementReset, customCss],
-      ...props,
-    },
+    { css: [anyReset, elementReset, anyCss], ...props },
     props.children
   )
 }
