@@ -1,5 +1,12 @@
 # Changelog
 
+# Release 7.0.2
+
+## @modelberry/css-theme 7.0.2
+
+### [7.0.2](https://github.com/modelberry/sites/compare/7.0.1...7.0.2) (2022-01-13)
+
+
 # Release 7.0.1
 
 ## @modelberry/any-element 7.0.1
