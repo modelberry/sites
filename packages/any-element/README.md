@@ -4,7 +4,7 @@ The `Any element` with CSS reset and CSS Emotion props.
 
 ## So what is it?
 
-In it's core it's a convenience.
+It's a convenience.
 
 - It's convenient because it supplies all the HTML elements as a React function.
 - It's convenient because it provides a build in css reset.
