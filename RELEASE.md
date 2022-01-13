@@ -1,19 +1,10 @@
-## @modelberry/any-element 7.0.0
+## @modelberry/any-element 7.0.1
 
-## [7.0.0](https://github.com/modelberry/sites/compare/6.28.12...7.0.0) (2021-11-01)
-
-
-### ⚠ BREAKING CHANGES
-
-* Use anyCss prop instead of css prop
-
-### Features
-
-* anyCss prop ([29857c9](https://github.com/modelberry/sites/commit/29857c934abaf34b327027689ca472844af50f37))
+### [7.0.1](https://github.com/modelberry/sites/compare/7.0.0...7.0.1) (2022-01-13)
 
 
-### Bug Fixes
+### Documentation
 
-* clarity on multiple css classes ([3197a2e](https://github.com/modelberry/sites/commit/3197a2efede5de3428903cf537279aa08c5e3267))
+* covering the basiscs ([c4aac07](https://github.com/modelberry/sites/commit/c4aac076384c4a23413d3ee2e7ba059f089e6a93))
 
 
