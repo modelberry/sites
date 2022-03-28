@@ -1,6 +1,6 @@
 {
   "name": "@modelberry/parse-markdown-links",
-  "version": "7.0.3",
+  "version": "7.0.5",
   "description": "Library for parsing markdown links",
   "keywords": [
     "component",
