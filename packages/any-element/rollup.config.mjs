@@ -7,22 +7,28 @@ import pluginTypescript from '@rollup/plugin-typescript'
 import pluginCommonjs from '@rollup/plugin-commonjs'
 import pluginNodeResolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json'
-import pkg from './package.json'
-import rootPkg from '../../package.json'
+import pkg from './package.json' assert { type: "json" }
+import rootPkg from '../../package.json' assert { type: "json" }
 
 const moduleName = pkg.name.replace(/^@.*\//, '')
 const author = rootPkg.author
-const globals = {}
+const globals = {
+  react: '*',
+  'react-dom': '*',
+  '@emotion/css': '*',
+  '@emotion/react': '*',
+  'react/jsx-runtime': '*',
+}
 const external = Object.keys(globals)
 
 const banner = `
-   /**
-    * @license
-    * author: ${author}
-    * ${moduleName} v${pkg.version}
-    * Released under the ${rootPkg.license} license.
-    */
-   `
+  /**
+   * @license
+   * author: ${author}
+   * ${moduleName} v${pkg.version}
+   * Released under the ${rootPkg.license} license.
+   */
+  `
 
 const plugins = [
   // so Rollup can find node modules
@@ -41,12 +47,12 @@ const plugins = [
 export default [
   {
     external,
-    input: './src/plain.ts',
+    input: './src/react.ts',
     output: [
       {
         banner,
         exports: 'named',
-        file: `./build/plain.mjs`,
+        file: `./build/react.mjs`,
         format: 'es',
         globals,
         sourcemap: false,
@@ -54,7 +60,7 @@ export default [
       {
         banner,
         exports: 'named',
-        file: `./build/plain.cjs`,
+        file: `./build/react.cjs`,
         format: 'cjs',
         globals,
         sourcemap: false,
