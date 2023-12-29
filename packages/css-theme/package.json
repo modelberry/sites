@@ -1,6 +1,6 @@
 {
   "name": "@modelberry/css-theme",
-  "version": "7.0.9",
+  "version": "7.0.12",
   "description": "Library for working with css theme variables",
   "keywords": [
     "component",
